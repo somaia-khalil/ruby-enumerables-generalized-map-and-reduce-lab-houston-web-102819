@@ -28,4 +28,23 @@ end
   
 end
 
+# some other try 
+
+def reduce (array , startpoint = nil)
+  
+  
+  
+  
+  counter=0 
+  total = startpoint
+  
+  while counter < array.size 
+  total =  yield(total, array[counter])
+  counter+=1
+  end
+  
+  return total
+  
+end
+
 
